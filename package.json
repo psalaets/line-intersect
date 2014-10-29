@@ -12,8 +12,16 @@
     "intersect",
     "2d"
   ],
-  "author": "",
+  "author": "Paul Salaets <psalaets@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psalaets/line-intersect.git"
+  },
+  "homepage": "https://github.com/psalaets/line-intersect",
+  "bugs": {
+    "url": "https://github.com/psalaets/line-intersect/issues"
+  },
   "devDependencies": {
     "mocha": "^2.0.1"
   }
