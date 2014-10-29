@@ -36,6 +36,10 @@ Math is mostly from [here](https://web.archive.org/web/20060808212243/http://loc
     
     result // boolean
 
+## Install
+
+    npm install line-intersect
+
 ## License
 
 MIT
