@@ -1,10 +1,10 @@
 {
   "name": "line-intersect",
   "version": "1.0.0",
-  "description": "Line segment intersection",
+  "description": "Line segment vs line segment, point vs line segment",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha test.js"
+    "test": "./node_modules/.bin/mocha"
   },
   "keywords": [
     "line",

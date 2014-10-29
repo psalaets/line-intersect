@@ -1,5 +1,5 @@
 var assert = require('assert');
-var lineIntersect = require('./');
+var lineIntersect = require('../');
 
 describe('.checkIntersection', function() {
   describe('non-parallel, non-intersecting line segments', function() {
