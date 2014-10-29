@@ -21,9 +21,20 @@ Math is mostly from [here](https://web.archive.org/web/20060808212243/http://loc
     result.type  // any of none, parallel, colinear, intersecting
     result.point // only exists when result.type == 'intersecting'
 
-### .isColinearPointWithinSegment
+### .colinearPointWithinSegment
 
-    TODO
+    var lineIntersect = require('line-intersect');
+    
+    var line = ...
+    var point = ...
+
+    var result = lineIntersect.colinearPointWithinSegment(
+      point.x, point.y
+      line.start.x, line.start.y,
+      line.end.x, line.end.y
+    );
+    
+    result // boolean
 
 ## License
 
