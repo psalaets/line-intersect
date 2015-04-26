@@ -8,37 +8,43 @@ Math is mostly from [here](https://web.archive.org/web/20060808212243/http://loc
 
 ### .checkIntersection
 
-    var lineIntersect = require('line-intersect');
-    
-    var line1 = ...
-    var line2 = ...
-    
-    var result = lineIntersect.checkIntersection(
-      line1.start.x, line1.start.y, line1.end.x, line1.end.y,
-      line2.start.x, line2.start.y, line2.end.x, line2.end.y
-    );
-    
-    result.type  // any of none, parallel, colinear, intersecting
-    result.point // only exists when result.type == 'intersecting'
+```js
+var lineIntersect = require('line-intersect');
+
+var line1 = ...
+var line2 = ...
+
+var result = lineIntersect.checkIntersection(
+  line1.start.x, line1.start.y, line1.end.x, line1.end.y,
+  line2.start.x, line2.start.y, line2.end.x, line2.end.y
+);
+
+result.type  // any of none, parallel, colinear, intersecting
+result.point // only exists when result.type == 'intersecting'
+```
 
 ### .colinearPointWithinSegment
 
-    var lineIntersect = require('line-intersect');
-    
-    var line = ...
-    var point = ...
+```js
+var lineIntersect = require('line-intersect');
 
-    var result = lineIntersect.colinearPointWithinSegment(
-      point.x, point.y
-      line.start.x, line.start.y,
-      line.end.x, line.end.y
-    );
-    
-    result // boolean
+var line = ...
+var point = ...
+
+var result = lineIntersect.colinearPointWithinSegment(
+  point.x, point.y
+  line.start.x, line.start.y,
+  line.end.x, line.end.y
+);
+
+result // boolean
+```
 
 ## Install
 
-    npm install line-intersect
+```bash
+npm install line-intersect
+```
 
 ## License
 
