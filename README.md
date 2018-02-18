@@ -1,6 +1,6 @@
 # line-intersect
 
-Intersection checks for line segment vs line segment and point vs line segment.
+Line segment vs line segment, point vs line segment
 
 Math is mostly from [here](https://web.archive.org/web/20060808212243/http://local.wasp.uwa.edu.au/~pbourke/geometry/lineline2d).
 
