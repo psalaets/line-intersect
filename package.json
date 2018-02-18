@@ -4,7 +4,7 @@
   "description": "Line segment vs line segment, point vs line segment",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "mocha"
   },
   "keywords": [
     "line",
@@ -23,6 +23,6 @@
     "url": "https://github.com/psalaets/line-intersect/issues"
   },
   "devDependencies": {
-    "mocha": "^2.0.1"
+    "mocha": "^5.0.1"
   }
 }
