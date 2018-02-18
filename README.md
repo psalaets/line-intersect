@@ -4,47 +4,66 @@ Intersection checks for line segment vs line segment and point vs line segment.
 
 Math is mostly from [here](https://web.archive.org/web/20060808212243/http://local.wasp.uwa.edu.au/~pbourke/geometry/lineline2d).
 
-## Usage
-
-### .checkIntersection
-
-```js
-var lineIntersect = require('line-intersect');
-
-var line1 = ...
-var line2 = ...
-
-var result = lineIntersect.checkIntersection(
-  line1.start.x, line1.start.y, line1.end.x, line1.end.y,
-  line2.start.x, line2.start.y, line2.end.x, line2.end.y
-);
-
-result.type  // any of none, parallel, colinear, intersecting
-result.point // only exists when result.type == 'intersecting'
-```
-
-### .colinearPointWithinSegment
-
-```js
-var lineIntersect = require('line-intersect');
-
-var line = ...
-var point = ...
-
-var result = lineIntersect.colinearPointWithinSegment(
-  point.x, point.y
-  line.start.x, line.start.y,
-  line.end.x, line.end.y
-);
-
-result // boolean
-```
-
 ## Install
 
 ```bash
 npm install line-intersect
 ```
+
+## API
+
+```js
+const lineIntersect = require('line-interset');
+```
+
+### lineIntersect.checkIntersection(x1, y1, x2, y2, x3, y3, x4, y4)
+
+Given a line segment from (x1, y1) to (x2, y2) and line segment from (x3, y3) to (x4, y4), check if the line segments intersect.
+
+#### Parameters
+
+- x1, y1, x2, y2 - 1st line segment
+- x3, y3, x4, y4 - 2nd line segment
+
+All params are Numbers and are required.
+
+#### Returns
+
+Object that looks like
+
+```js
+{
+  type: 'none' | 'parallel' | 'colinear' | 'intersecting',
+  point: {
+    x: <Number>,
+    y: <Number>
+  }
+}
+```
+
+| value of `type` | What it means                                                   |
+|-----------------|-----------------------------------------------------------------------|
+| 'none'          | Line segments are not intersecting                                  |
+| 'parallel'      | Line segments are not intersecting but they are parallel to eachother     |
+| 'colinear'      | Line segments are on the same line and *may* be overlapping. Use `lineIntersect.colinearPointWithinSegment()` to check |
+| 'intersecting'  | Line segments intersect at exactly one point |
+
+`point` is `undefined` unless `type == 'intersecting'`
+
+### lineIntersect.colinearPointWithinSegment(px, py, x1, y1, x2, y1)
+
+Given a point (px, py) that is on the same line as line segment (x1, y1) to (x2, y2), check if the point is within the line segment.
+
+#### Parameters
+
+- px, py - Point to check
+- x1, y1, x2, y2 - Line segment
+
+All params are Numbers and are required.
+
+#### Returns
+
+`true` if point is within the line segment, `false` otherwise.
 
 ## License
 
