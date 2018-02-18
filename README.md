@@ -13,7 +13,7 @@ npm install line-intersect
 ## API
 
 ```js
-const lineIntersect = require('line-interset');
+const lineIntersect = require('line-intersect');
 ```
 
 ### lineIntersect.checkIntersection(x1, y1, x2, y2, x3, y3, x4, y4)
