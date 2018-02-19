@@ -1,8 +1,18 @@
 {
   "presets": [
-    ["env", {"modules": false}]
+    ["env"]
   ],
   "env": {
+    "test": {
+      "presets": [
+        [
+          "env",
+          {
+            "modules": "commonjs"
+          }
+        ]
+      ]
+    },
     "commonjs": {
       "presets": [
         [

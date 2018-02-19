@@ -1,5 +1,8 @@
 var assert = require('assert');
-var lineIntersect = require('../');
+var lineIntersect = require('../src/index');
+
+console.log(lineIntersect);
+
 
 describe('.colinearPointWithinSegment', function() {
   it('false when point is colinear but not within line segment', function() {

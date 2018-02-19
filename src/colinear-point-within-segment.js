@@ -10,7 +10,7 @@
 * @param {number} endY   - Y of line segment end
 * @return {boolean} true if point is within segment, false otherwise.
 */
-function colinearPointWithinSegment(pointX, pointY, startX, startY, endX, endY) {
+export function colinearPointWithinSegment(pointX, pointY, startX, startY, endX, endY) {
   if (startX != endX) {
     if (startX <= pointX && pointX <= endX) return true;
     if (startX >= pointX && pointX >= endX) return true;
@@ -20,5 +20,3 @@ function colinearPointWithinSegment(pointX, pointY, startX, startY, endX, endY) 
   }
   return false;
 }
-
-module.exports = colinearPointWithinSegment;
