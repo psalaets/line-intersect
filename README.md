@@ -1,3 +1,8 @@
+next steps
+
+1. rewrite in es6
+2. publish v3? breaking cuz old old browsers may no longer work?
+
 # line-intersect
 
 Line segment vs line segment, point vs line segment
@@ -50,7 +55,7 @@ Object that looks like
 
 `point` is `undefined` unless `type == 'intersecting'`
 
-### lineIntersect.colinearPointWithinSegment(px, py, x1, y1, x2, y1)
+### lineIntersect.colinearPointWithinSegment(px, py, x1, y1, x2, y2)
 
 Given a point (px, py) that is on the same line as line segment (x1, y1) to (x2, y2), check if the point is within the line segment.
 
