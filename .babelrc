@@ -1,50 +1,43 @@
 {
   "presets": [
-    ["env"]
+    ["env", {
+      "modules": false
+    }]
   ],
   "env": {
     "test": {
       "presets": [
-        [
-          "env",
-          {
-            "modules": "commonjs"
-          }
-        ]
+        ["env", {
+          "modules": "commonjs"
+        }]
       ]
     },
     "commonjs": {
       "presets": [
-        [
-          "env",
-          {
-            "targets": {
-              "browsers": [
-                "last 2 versions",
-                "ie > 10"
-              ],
-              "node": 6
-            },
-            "modules": "commonjs"
-          }
-        ]
+        ["env", {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "ie > 10"
+            ],
+            "node": 6
+          },
+          "modules": "commonjs"
+        }]
       ]
     },
     "es": {
       "presets": [
-        [
-          "env",
-          {
-            "targets": {
-              "browsers": [
-                "last 2 versions",
-                "ie > 10"
-              ],
-              "node": 6
-            },
-            "modules": false
-          }
-        ]
+        ["env", {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "ie > 10"
+            ],
+            "node": 6
+          },
+          "modules": false
+        }]
       ]
     }
   }
