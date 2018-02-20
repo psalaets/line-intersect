@@ -46,7 +46,7 @@ Object that looks like
 }
 ```
 
-| value of `type` | What it means                                                   |
+| `type` | What it means                                                   |
 |-----------------|-----------------------------------------------------------------------|
 | 'none'          | Line segments are not intersecting                                  |
 | 'parallel'      | Line segments are not intersecting but they are parallel to eachother     |

@@ -1,6 +1,6 @@
-var COLINEAR = intersectResult('colinear');
-var PARALLEL = intersectResult('parallel');
-var NONE = intersectResult('none');
+const COLINEAR = intersectResult('colinear');
+const PARALLEL = intersectResult('parallel');
+const NONE = intersectResult('none');
 
 /**
 * Check how two line segments intersect eachother. Line segments are represented
@@ -21,9 +21,9 @@ var NONE = intersectResult('none');
 *    }
 */
 export function checkIntersection(x1, y1, x2, y2, x3, y3, x4, y4) {
-  var denom = ((y4 - y3) * (x2 - x1)) - ((x4 - x3) * (y2 - y1));
-  var numeA = ((x4 - x3) * (y1 - y3)) - ((y4 - y3) * (x1 - x3));
-  var numeB = ((x2 - x1) * (y1 - y3)) - ((y2 - y1) * (x1 - x3));
+  const denom = ((y4 - y3) * (x2 - x1)) - ((x4 - x3) * (y2 - y1));
+  const numeA = ((x4 - x3) * (y1 - y3)) - ((y4 - y3) * (x1 - x3));
+  const numeB = ((x2 - x1) * (y1 - y3)) - ((y2 - y1) * (x1 - x3));
 
   if (denom == 0) {
     if (numeA == 0 && numeB == 0) {
@@ -32,28 +32,27 @@ export function checkIntersection(x1, y1, x2, y2, x3, y3, x4, y4) {
     return PARALLEL;
   }
 
-  var uA = numeA / denom;
-  var uB = numeB / denom;
+  const uA = numeA / denom;
+  const uB = numeB / denom;
 
   if (uA >= 0 && uA <= 1 && uB >= 0 && uB <= 1) {
-    var point = {
+    return intersecting({
       x: x1 + (uA * (x2 - x1)),
       y: y1 + (uA * (y2 - y1))
-    };
-    return intersecting(point);
+    });
   }
 
   return NONE;
 }
 
 function intersecting(point) {
-  var result = intersectResult('intersecting');
+  const result = intersectResult('intersecting');
   result.point = point;
   return result;
 }
 
 function intersectResult(type) {
   return {
-    type: type
+    type
   };
 }
