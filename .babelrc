@@ -1,20 +1,21 @@
 {
   "presets": [
-    ["env", {
-      "modules": false
-    }]
+    ["@babel/preset-env"]
   ],
   "env": {
     "test": {
       "presets": [
-        ["env", {
-          "modules": "commonjs"
+        ["@babel/preset-env", {
+          "modules": "commonjs",
+          "targets": {
+            "node": "current"
+          }
         }]
       ]
     },
     "commonjs": {
       "presets": [
-        ["env", {
+        ["@babel/preset-env", {
           "targets": {
             "browsers": [
               "last 2 versions",
@@ -28,7 +29,7 @@
     },
     "es": {
       "presets": [
-        ["env", {
+        ["@babel/preset-env", {
           "targets": {
             "browsers": [
               "last 2 versions",
