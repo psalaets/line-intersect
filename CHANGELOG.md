@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.1.0] - 2018-02-20
+
+### Added
+
+- Now supporting es modules in additional to commonjs modules so app bundlers can take advantage of that
+
 ## [2.0.0] - 2018-02-18
 
 ### Breaking changes
