@@ -1,6 +1,6 @@
 {
   "name": "line-intersect",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Line segment vs line segment, point vs line segment",
   "main": "commonjs/index.js",
   "module": "es/index.js",
