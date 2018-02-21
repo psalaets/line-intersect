@@ -5,7 +5,7 @@
   "main": "commonjs/index.js",
   "module": "es/index.js",
   "scripts": {
-    "test": "BABEL_ENV=test mocha --require babel-register",
+    "test": "BABEL_ENV=test mocha --require @babel/register",
     "prebuild": "npm run clean",
     "build": "npm run build:commonjs && npm run build:es",
     "build:commonjs": "BABEL_ENV=commonjs babel src --out-dir commonjs",
