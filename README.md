@@ -1,8 +1,3 @@
-next steps
-
-1. rewrite in es6
-2. publish v3? breaking cuz old old browsers may no longer work?
-
 # line-intersect
 
 Line segment vs line segment, point vs line segment
