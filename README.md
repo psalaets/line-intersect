@@ -55,7 +55,7 @@ Object that looks like
 }
 ```
 
-| `type` | What it means | Line segments touching? |
+| `type` | What it means | Are the line segments touching? |
 |-----------------|-----------------------------------------------------------------------|----|
 | 'none'          | Line segments are not intersecting                                  | No |
 | 'parallel'      | Line segments are not intersecting but they are parallel to eachother | No |
