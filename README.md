@@ -55,12 +55,12 @@ Object that looks like
 }
 ```
 
-| `type` | What it means                                                   |
-|-----------------|-----------------------------------------------------------------------|
-| 'none'          | Line segments are not intersecting                                  |
-| 'parallel'      | Line segments are not intersecting but they are parallel to eachother     |
-| 'colinear'      | Line segments are on the same line and *may* be overlapping. Use `colinearPointWithinSegment()` to check |
-| 'intersecting'  | Line segments intersect at exactly one point |
+| `type` | What it means | Line segments touching? |
+|-----------------|-----------------------------------------------------------------------|----|
+| 'none'          | Line segments are not intersecting                                  | No |
+| 'parallel'      | Line segments are not intersecting but they are parallel to eachother | No |
+| 'colinear'      | Line segments are on the same line and *may* be overlapping. Use `colinearPointWithinSegment()` to check | Maybe |
+| 'intersecting'  | Line segments intersect at exactly one point | Yes |
 
 `point` is `undefined` unless `type == 'intersecting'`
 
