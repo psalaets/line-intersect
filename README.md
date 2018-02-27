@@ -12,11 +12,25 @@ npm install line-intersect
 
 ## API
 
+es6
+
 ```js
-const lineIntersect = require('line-intersect');
+import {
+  checkIntersection,
+  colinearPointWithinSegment
+} from 'line-intersect';
 ```
 
-### lineIntersect.checkIntersection(x1, y1, x2, y2, x3, y3, x4, y4)
+node
+
+```js
+const {
+  checkIntersection,
+  colinearPointWithinSegment
+} = require('line-intersect');
+```
+
+### checkIntersection(x1, y1, x2, y2, x3, y3, x4, y4)
 
 Given a line segment from (x1, y1) to (x2, y2) and line segment from (x3, y3) to (x4, y4), check if the line segments intersect.
 
@@ -45,12 +59,12 @@ Object that looks like
 |-----------------|-----------------------------------------------------------------------|
 | 'none'          | Line segments are not intersecting                                  |
 | 'parallel'      | Line segments are not intersecting but they are parallel to eachother     |
-| 'colinear'      | Line segments are on the same line and *may* be overlapping. Use `lineIntersect.colinearPointWithinSegment()` to check |
+| 'colinear'      | Line segments are on the same line and *may* be overlapping. Use `colinearPointWithinSegment()` to check |
 | 'intersecting'  | Line segments intersect at exactly one point |
 
 `point` is `undefined` unless `type == 'intersecting'`
 
-### lineIntersect.colinearPointWithinSegment(px, py, x1, y1, x2, y2)
+### colinearPointWithinSegment(px, py, x1, y1, x2, y2)
 
 Given a point (px, py) that is on the same line as line segment (x1, y1) to (x2, y2), check if the point is within the line segment.
 
