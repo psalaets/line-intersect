@@ -12,7 +12,7 @@ npm install line-intersect
 
 ## API
 
-es6
+es modules
 
 ```js
 import {
@@ -21,7 +21,7 @@ import {
 } from 'line-intersect';
 ```
 
-node
+commonjs modules
 
 ```js
 const {
