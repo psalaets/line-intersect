@@ -43,7 +43,7 @@ All params are Numbers and are required.
 
 #### Returns
 
-Object that looks like
+A read-only Object that looks like
 
 ```js
 {
@@ -62,7 +62,7 @@ Object that looks like
 | 'colinear'      | Line segments are on the same line and *may* be overlapping. Use `colinearPointWithinSegment()` to check | Maybe |
 | 'intersecting'  | Line segments intersect at exactly one point | Yes |
 
-`point` is `undefined` unless `type == 'intersecting'`
+Note: `point` is `undefined` unless `type == 'intersecting'`
 
 ### colinearPointWithinSegment(px, py, x1, y1, x2, y2)
 
