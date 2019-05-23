@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.2.1] - 2019-05-23
+
+### Changed
+
+- Docs changes
+
 ## [2.2.0] - 2018-12-04
 
 ### Added

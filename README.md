@@ -1,6 +1,6 @@
 # line-intersect
 
-Line segment vs line segment, point vs line segment
+Line vs line, point vs line
 
 Math is mostly from [here](https://web.archive.org/web/20060808212243/http://local.wasp.uwa.edu.au/~pbourke/geometry/lineline2d).
 
@@ -55,14 +55,14 @@ A read-only Object that looks like
 }
 ```
 
+Note: `point` is `undefined` unless `type == 'intersecting'`
+
 | `type` | What it means | Are the line segments touching? |
 |-----------------|-----------------------------------------------------------------------|----|
 | 'none'          | Line segments are not intersecting                                  | No |
 | 'parallel'      | Line segments are not intersecting but they are parallel to eachother | No |
 | 'colinear'      | Line segments are on the same line and *may* be overlapping. Use `colinearPointWithinSegment()` to check | Maybe |
 | 'intersecting'  | Line segments intersect at exactly one point | Yes |
-
-Note: `point` is `undefined` unless `type == 'intersecting'`
 
 ### colinearPointWithinSegment(px, py, x1, y1, x2, y2)
 
