@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.2.2] - 2019-10-08
+
+### Changed
+
+- Small `package.json` change so typescript defs are included when this package is installed.
+
 ## [2.2.1] - 2019-05-23
 
 ### Changed
