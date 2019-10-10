@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.2.3] - 2019-10-10
+
+### Fixed
+
+- Declare module in TypeScript defs file, thanks [@klymenkoo](https://github.com/klymenkoo)
+
 ## [2.2.2] - 2019-10-08
 
 ### Changed
