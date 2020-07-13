@@ -13,6 +13,10 @@
     "clean": "rimraf es commonjs",
     "prepublishOnly": "npm run test && npm run build"
   },
+  "files": [
+    "es",
+    "commonjs"
+  ],
   "keywords": [
     "line",
     "segment",
