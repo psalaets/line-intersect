@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.2.4] - 2020-07-13
+
+### Fixed
+
+- Include all built files in package.
+
 ## [2.2.3] - 2019-10-10
 
 ### Fixed
