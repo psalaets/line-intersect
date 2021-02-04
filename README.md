@@ -1,6 +1,6 @@
 # line-intersect
 
-Line vs line, point vs line
+Line vs line, point vs line in 2D space
 
 Math is mostly from [here](https://web.archive.org/web/20060808212243/http://local.wasp.uwa.edu.au/~pbourke/geometry/lineline2d).
 
@@ -47,15 +47,21 @@ A read-only Object that looks like
 
 ```js
 {
-  type: 'none' | 'parallel' | 'colinear' | 'intersecting',
+  type: 'none' | 'parallel' | 'colinear'
+}
+
+// or
+
+{
+  type: 'intersecting',
   point: {
-    x: <Number>,
-    y: <Number>
+    x: number,
+    y: number
   }
 }
 ```
 
-Note: `point` is `undefined` unless `type == 'intersecting'`
+`point` is only exists when `type == 'intersecting'`
 
 | `type` | What it means | Are the line segments touching? |
 |-----------------|-----------------------------------------------------------------------|----|
