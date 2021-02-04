@@ -4,6 +4,7 @@
   "description": "Line vs line, point vs line",
   "main": "commonjs/index.js",
   "module": "es/index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "BABEL_ENV=test mocha --require @babel/register",
     "prebuild": "npm run clean",
@@ -15,7 +16,8 @@
   },
   "files": [
     "es",
-    "commonjs"
+    "commonjs",
+    "index.d.ts"
   ],
   "keywords": [
     "line",
