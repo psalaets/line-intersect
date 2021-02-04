@@ -1,7 +1,7 @@
 {
   "name": "line-intersect",
-  "version": "2.2.4",
-  "description": "Line vs line, point vs line",
+  "version": "3.0.0",
+  "description": "Line vs line, point vs line in 2D space",
   "main": "commonjs/index.js",
   "module": "es/index.js",
   "types": "index.d.ts",

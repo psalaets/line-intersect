@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.0] - 2021-02-03
+
+### Changed
+
+- Improved TypeScript typings. Thanks to [@seleb](https://github.com/seleb)
+
 ## [2.2.4] - 2020-07-13
 
 ### Fixed
